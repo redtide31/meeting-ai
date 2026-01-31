@@ -313,7 +313,4 @@ ollama list
 
 ---
 
-## License
-
-Add your preferred license (e.g., MIT, Apache 2.0).
 
