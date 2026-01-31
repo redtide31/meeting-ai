@@ -1,0 +1,24 @@
+[project]
+name = "meeting-ai"
+version = "0.1.0"
+description = "Local meeting transcription + summarization (Whisper + Ollama llama3) with UI"
+requires-python = ">=3.10"
+dependencies = [
+  "streamlit>=1.37.0",
+  "requests>=2.32.0",
+  "pydantic>=2.8.0",
+  "whisper @ git+https://github.com/openai/whisper.git",
+  "tqdm>=4.66.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0",
+  "pytest-mock>=3.14.0",
+  "ruff>=0.6.0",
+  "mypy>=1.11.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
